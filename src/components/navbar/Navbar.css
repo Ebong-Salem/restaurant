@@ -1,0 +1,146 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+   padding: 25px 30px;
+}
+
+.nav #close-icon{
+    display: none;
+}
+
+.nav .logo h1{
+    font-size: 2rem;
+    color: white;
+    
+}
+
+.nav .logo h1 span{
+    color: tomato;
+}
+
+
+.nav .links{
+    display: flex;
+    gap: 45px;
+    list-style: none;
+
+}
+
+ .links a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    color:white;
+
+
+}
+
+ .links a.actif{
+    color: orange;
+   
+ }
+
+
+.nav .links .btn0{
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    background: tomato;
+    color: white;
+    transition: all 0.3s linear;
+    
+
+}
+.nav .links .btn0:hover{
+   background: gray;
+   color: white;
+}
+
+
+.nav :where(#menu-icon,#close-icon,#cart-icon){
+    font-size: 2rem;
+   color: tomato;
+}
+.nav .icone{
+    display: none;
+}
+
+
+
+.nav .cart span{
+    background: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .cart span:hover{
+    transition: all 0.2s linear;
+    background: tomato;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:881px) {
+
+    .nav .links{
+        position: fixed;
+      
+        flex-direction: column;
+        background:#111011bf;
+        backdrop-filter: blur(20px);
+        padding: 30px;
+        width: 300px;
+        height: 100%;
+        left: -300px;
+        top: 0;
+        color: black;
+        gap: 50px;
+        text-align: center;
+        transition: left 0.3s ease;
+        z-index: 10;
+        justify-content: center;
+        align-items: center;
+       
+       
+      
+     
+    }
+  
+
+
+    .nav .links.open{
+        left: 0px;
+        transition: left 0.3s ease;
+    }
+    
+    .nav .links li:hover{
+        padding: 20px 40px;
+        background: rgba(128, 128, 128, 0.611);
+        display: block;
+    }
+
+    .nav #close-icon{
+        display: block;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+    .nav .icone{
+        display: block;
+    }
+    
+}

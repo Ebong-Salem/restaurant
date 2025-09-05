@@ -1,0 +1,186 @@
+
+.footer{
+
+    padding: 50px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+ 
+}
+
+ .first-row{
+
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.first-row .link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.footer .logo h1{
+    font-size: 2rem;
+    
+}
+
+.footer  .logo h1 span{
+    color: tomato;
+}
+
+
+.footer ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.footer ul a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.footer ul a:hover{
+    transition: all 0.3s ease;
+    color: tomato;
+}
+
+.footer hr{
+    width: 80%;
+    border-radius: 5px;
+    background: tomato;
+    margin: 20px auto;
+}
+
+.footer .second-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0px;
+}
+
+.footer .second-row h3{
+    text-transform: capitalize;
+    font-size: 2rem;
+
+}
+.footer .second-row .lien{
+    display: flex;
+    gap: 30px;
+}
+
+.footer .second-row  .lien i{
+    padding: 15px;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 2rem;
+    transition:  all 0.3s linear;
+}
+.footer .second-row  .lien i:nth-child(1){
+    color: blue;
+}
+
+.footer .second-row  .lien i:nth-child(2){
+    color: rgb(246, 106, 129);
+}
+
+.footer .second-row  .lien i:nth-child(3){
+    color: green;
+}
+
+
+
+.footer .second-row  .lien i:hover:nth-child(3){
+  
+    background: green;
+    color: white;
+    transform: scale(1.05);
+}
+
+.footer .second-row .lien i:hover:nth-child(2){
+    background: pink;
+    color: white;
+        transform: scale(1.05);
+    
+}
+
+
+.footer .second-row .lien i:hover:nth-child(1){
+    background: blue;
+    color: white;
+        transform: scale(1.05);
+    
+}
+.footer .third-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer .third-row p{
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+}
+
+.footer .third-row a{
+    text-decoration: none;
+    color: tomato;
+}
+
+.footer .third-row a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+@media screen and (max-width:660px){
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: row;
+
+
+    }
+
+    .footer .first-row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .first-row .link{
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .first-row .link ul{
+        flex-direction: column;
+    }
+
+    .footer .second-row  .lien i{
+        padding: 10px;
+    }
+
+
+    .footer .second-row{
+        flex-direction: column;
+    }
+
+    .footer .third-row{
+        flex-wrap: wrap;
+        text-align: center;
+        line-height: 1.8;
+      
+        margin: auto 20px;
+    }
+}
